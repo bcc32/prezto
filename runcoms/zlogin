@@ -22,9 +22,9 @@ if (( $+commands[fortune] )); then
   fi
 fi
 
-if have screen; then
+if is_installed screen; then
     screen -ls
 fi
-if have tmux; then
+if is_installed tmux; then
     tmux ls
 fi

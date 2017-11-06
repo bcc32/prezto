@@ -18,15 +18,11 @@ COMPLETION_WAITING_DOTS="true"
 alias e='open -a /Applications/Emacs.app'
 alias db='danbooru-tool'
 alias mplayer='mpv'
-if have vim; then
+if is_installed vim; then
     alias vi='vim'
 fi
 
-source_env() {
-    if [[ -f .env ]]; then
-        source .env
-    fi
-}
+autoload -Uz source_env
 
 source_env
 
