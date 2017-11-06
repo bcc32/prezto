@@ -11,3 +11,24 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+DEFAULT_USER="rouka"
+COMPLETION_WAITING_DOTS="true"
+
+alias e='open -a /Applications/Emacs.app'
+alias db='danbooru-tool'
+alias mplayer='mpv'
+if have vim; then
+    alias vi='vim'
+fi
+
+source_env() {
+    if [[ -f .env ]]; then
+        source .env
+    fi
+}
+
+source_env
+
+autoload -U add-zsh-hook
+add-zsh-hook chpwd source_env
