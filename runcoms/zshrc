@@ -1,3 +1,7 @@
+if [[ -z "$zprofile_sourced" ]]; then
+    source "${ZDOTDIR:-$HOME}/.zprofile"
+fi
+
 #
 # Executes commands at the start of an interactive session.
 #

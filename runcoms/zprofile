@@ -101,3 +101,5 @@ eval `perl -Mlocal::lib`
 if is_installed rbenv; then
     eval "$(rbenv init -)"
 fi
+
+zprofile_sourced=1
