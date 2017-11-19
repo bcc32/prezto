@@ -94,8 +94,8 @@ if is_installed opam; then
     eval `opam config env`
 fi
 
-# CPAN configuration
-eval `perl -Mlocal::lib`
+# Perl local::lib configuration
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 
 # rbenv
 if is_installed rbenv; then
