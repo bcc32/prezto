@@ -85,8 +85,12 @@ fi
 
 export YT_API_KEY='AIzaSyAPGisBETz4EIj9Byxl70QVQQHKwIF-X3A'
 
-typeset -U path
-path=(~/bin /usr/local/bin $GOPATH/bin $path[@])
+path=(
+    ~/bin
+    $GOPATH/bin
+    ~/.cargo/bin
+    $path[@]
+)
 
 if is_installed opam; then
     # OPAM configuration
@@ -101,5 +105,7 @@ eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 if is_installed rbenv; then
     eval "$(rbenv init -)"
 fi
+
+export RUST_SRC_PATH=/usr/local/src/rust/src
 
 zprofile_sourced=1
