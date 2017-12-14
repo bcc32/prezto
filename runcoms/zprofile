@@ -80,7 +80,7 @@ if is_installed ledger; then
     export LEDGER_FILE=$LEDGER_PATH/journal.ldg
     export LEDGER_PRICE_DB=$LEDGER_PATH/pricedb.ldg
     export LEDGER_EXPLICIT=1
-    export LEDGER_PEDANTIC=1
+    export LEDGER_STRICT=1
     export LEDGER_DATE_FORMAT=%Y-%m-%d
 fi
 
