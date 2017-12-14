@@ -46,6 +46,8 @@ path=(
   ~/bin
   /usr/local/{bin,sbin}
   $path
+  $GOPATH/bin
+  ~/.cargo/bin
 )
 
 #
@@ -85,11 +87,6 @@ if is_installed ledger; then
 fi
 
 export YT_API_KEY='AIzaSyAPGisBETz4EIj9Byxl70QVQQHKwIF-X3A'
-
-path+=(
-    $GOPATH/bin
-    ~/.cargo/bin
-)
 
 if is_installed opam; then
     # OPAM configuration
