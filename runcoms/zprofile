@@ -48,6 +48,7 @@ path=(
   $path
   $GOPATH/bin
   ~/.cargo/bin
+  ~/.local/bin
 )
 
 #
