@@ -89,6 +89,14 @@ fi
 
 export YT_API_KEY='AIzaSyAPGisBETz4EIj9Byxl70QVQQHKwIF-X3A'
 
+# ssh-agent
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent > ~/.ssh-agent-thing
+fi
+if [ -z "$SSH_AGENT_PID" ]; then
+    source ~/.ssh-agent-thing
+fi
+
 if is_installed opam; then
     # OPAM configuration
     . ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
