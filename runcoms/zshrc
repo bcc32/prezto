@@ -20,6 +20,7 @@ DEFAULT_USER="rouka"
 COMPLETION_WAITING_DOTS="true"
 
 alias e='open -a /Applications/Emacs.app'
+alias ec=emacsclient
 alias db='danbooru-tool'
 alias mplayer='mpv'
 if is_installed vim; then
