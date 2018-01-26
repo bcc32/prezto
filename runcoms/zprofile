@@ -94,7 +94,7 @@ if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     ssh-agent > ~/.ssh-agent-thing
 fi
 if [ -z "$SSH_AUTH_SOCK" ]; then
-    source ~/.ssh-agent-thing
+    source ~/.ssh-agent-thing >/dev/null
 fi
 
 if is_installed opam; then
