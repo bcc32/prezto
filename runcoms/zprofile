@@ -103,11 +103,6 @@ fi
 # Perl local::lib configuration
 eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 
-# rbenv
-if is_installed rbenv; then
-    eval "$(rbenv init -)"
-fi
-
 export RUST_SRC_PATH=/usr/local/src/rust/src
 
 zprofile_sourced=1
