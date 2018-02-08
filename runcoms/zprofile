@@ -97,11 +97,8 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
     source ~/.ssh-agent-thing >/dev/null
 fi
 
-if is_installed opam; then
-    # OPAM configuration
-    . ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-    eval `opam config env`
-fi
+# OPAM configuration
+. ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 # Perl local::lib configuration
 eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
