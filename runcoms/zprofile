@@ -105,4 +105,6 @@ eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 
 export RUST_SRC_PATH=/usr/local/src/rust/src
 
+export RIPGREP_CONFIG_PATH=~/.ripgreprc
+
 zprofile_sourced=1
