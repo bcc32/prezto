@@ -46,7 +46,7 @@ path=(
   ~/bin
   /usr/local/{bin,sbin}
   $path
-  $GOPATH/bin
+  ~/go/bin
   ~/.cargo/bin
   ~/.local/bin
 )
@@ -74,7 +74,6 @@ fpath=(
 autoload -Uz is_installed
 
 export EDITOR=vi
-export GOPATH=~/go
 export GPG_TTY=$(tty)
 export COPYFILE_DISABLE=1 # prevent tar from adding ._* files
 
