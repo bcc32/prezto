@@ -16,7 +16,6 @@ fi
 
 # Customize to your needs...
 
-DEFAULT_USER="rouka"
 COMPLETION_WAITING_DOTS="true"
 
 alias e='open -a /Applications/Emacs.app'

@@ -86,8 +86,6 @@ if is_installed ledger; then
     export LEDGER_DATE_FORMAT=%Y-%m-%d
 fi
 
-export YT_API_KEY='AIzaSyAPGisBETz4EIj9Byxl70QVQQHKwIF-X3A'
-
 # ssh-agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     ssh-agent > ~/.ssh-agent-thing
