@@ -77,7 +77,7 @@ export EDITOR=vi
 export GPG_TTY=$(tty)
 export COPYFILE_DISABLE=1 # prevent tar from adding ._* files
 
-if is_installed ledger; then
+if is_installed ledger || is_installed hledger; then
     LEDGER_PATH="$HOME/Google Drive/Finances/Journal"
     export LEDGER_FILE=$LEDGER_PATH/journal.ldg
     export LEDGER_PRICE_DB=$LEDGER_PATH/pricedb.ldg
