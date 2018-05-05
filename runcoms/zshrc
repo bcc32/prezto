@@ -26,13 +26,6 @@ if is_installed vim; then
     alias vi='vim'
 fi
 
-# Use .env files for private environment variables
-
-autoload -Uz source_env
-source_env
-autoload -U add-zsh-hook
-add-zsh-hook chpwd source_env
-
 # tmux aliases
 
 alias ta='tmux attach -t'
@@ -49,3 +42,7 @@ alias ls="${aliases[ls]:-ls} -F"
 # Allow interactive comments
 
 setopt interactivecomments
+
+if is_installed direnv; then
+    eval "$(direnv hook zsh)"
+fi
