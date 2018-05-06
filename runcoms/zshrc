@@ -45,4 +45,6 @@ setopt interactivecomments
 
 if is_installed direnv; then
     eval "$(direnv hook zsh)"
+else
+    echo "direnv not installed... ignoring."
 fi
