@@ -22,7 +22,7 @@ alias e='open -a /Applications/Emacs.app'
 alias ec=emacsclient
 alias db='danbooru-tool'
 alias mplayer='mpv'
-if is_installed vim; then
+if (( $+commands[vim] )); then
     alias vi='vim'
 fi
 
@@ -43,7 +43,7 @@ alias ls="${aliases[ls]:-ls} -F"
 
 setopt interactivecomments
 
-if is_installed direnv; then
+if (( $+commands[direnv] )); then
     eval "$(direnv hook zsh)"
 else
     echo "direnv not installed... ignoring."

@@ -25,9 +25,9 @@
 
 } >&2
 
-if is_installed screen; then
+if (( $+commands[screen] )); then
     screen -ls
 fi
-if is_installed tmux; then
+if (( $+commands[tmux] )); then
     tmux ls
 fi
