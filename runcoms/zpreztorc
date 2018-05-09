@@ -39,6 +39,7 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'fasd' \
   'git' \
+  'pacman' \
   'ssh'
 
 #
@@ -108,7 +109,7 @@ zstyle ':prezto:module:gnu-utility' prefix 'g'
 #
 
 # Set the Pacman frontend.
-# zstyle ':prezto:module:pacman' frontend 'yaourt'
+zstyle ':prezto:module:pacman' frontend 'yay'
 
 #
 # Prompt
