@@ -38,7 +38,8 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'prompt' \
   'fasd' \
-  'git'
+  'git' \
+  'ssh'
 
 #
 # Autosuggestions

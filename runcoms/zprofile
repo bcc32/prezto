@@ -84,14 +84,6 @@ if (( $+commands[ledger] || $+commands[hledger] )); then
     export LEDGER_DATE_FORMAT=%Y-%m-%d
 fi
 
-# ssh-agent
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    ssh-agent > ~/.ssh-agent-thing
-fi
-if [ -z "$SSH_AUTH_SOCK" ]; then
-    source ~/.ssh-agent-thing >/dev/null
-fi
-
 # OPAM configuration
 . ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
