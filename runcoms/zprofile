@@ -71,7 +71,6 @@ fpath=(
     $fpath[@]
 )
 
-export EDITOR=vi
 export GPG_TTY=$(tty)
 export COPYFILE_DISABLE=1 # prevent tar from adding ._* files
 
