@@ -100,4 +100,8 @@ export FZF_DEFAULT_OPTS='
   --color info:136,prompt:136,pointer:230,marker:230,spinner:136
 '
 
+if (( $+commands[patdiff] )); then
+    export GIT_EXTERNAL_DIFF=$HOME/bin/patdiff-git
+fi
+
 zprofile_sourced=1
