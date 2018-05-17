@@ -23,11 +23,11 @@
     print
   fi
 
-} >&2
+  if (( $+commands[screen] )); then
+      screen -ls
+  fi
+  if (( $+commands[tmux] )); then
+      tmux ls
+  fi
 
-if (( $+commands[screen] )); then
-    screen -ls
-fi
-if (( $+commands[tmux] )); then
-    tmux ls
-fi
+} >&2
