@@ -101,7 +101,7 @@ export FZF_DEFAULT_OPTS='
 '
 
 if (( $+commands[patdiff] )); then
-    export GIT_EXTERNAL_DIFF=$HOME/bin/patdiff-git
+    export GIT_EXTERNAL_DIFF=patdiff-git-wrapper
 fi
 
 zprofile_sourced=1
