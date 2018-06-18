@@ -35,6 +35,11 @@ alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
 
+# LastPass CLI aliases
+
+alias pass='lpass show --sync=no -c --password'
+alias user='lpass show --sync=no -c --username'
+
 # Add sigils to ls output
 
 alias ls="${aliases[ls]:-ls} -F"
