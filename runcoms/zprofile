@@ -5,6 +5,10 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+if [[ -f /etc/profile ]]; then
+  source /etc/profile
+fi
+
 #
 # Browser
 #
