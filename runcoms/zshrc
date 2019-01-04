@@ -35,6 +35,12 @@ alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
 
+# zmv aliases
+
+alias zmv='noglob zmv'
+alias zcp='noglob zmv -C'
+alias zln='noglob zmv -L'
+
 # Add sigils to ls output
 
 alias ls="${aliases[ls]:-ls} -F"
