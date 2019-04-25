@@ -25,6 +25,7 @@ alias mplayer='mpv'
 if (( $+commands[vim] )); then
     alias vi='vim'
 fi
+alias wl='watch-later'
 
 # tmux aliases
 
