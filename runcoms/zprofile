@@ -31,6 +31,8 @@ export PAGER='less'
 
 if [[ -z "$LANG" ]]; then
   export LANG='en_US.UTF-8'
+  export LC_COLLATE=C
+  export LC_NUMERIC=C
 fi
 
 #
