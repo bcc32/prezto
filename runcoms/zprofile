@@ -86,11 +86,6 @@ if (( $+commands[ledger] || $+commands[hledger] )); then
     export LEDGER_DATE_FORMAT=%Y-%m-%d
 fi
 
-# rbenv
-if (( $+commands[rbenv] )); then
-    eval "$(rbenv init -)"
-fi
-
 export RIPGREP_CONFIG_PATH=~/.ripgreprc
 
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/*"'
