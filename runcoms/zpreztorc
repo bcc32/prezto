@@ -45,7 +45,8 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'pacman' \
   'ssh' \
-  'ocaml'
+  'ocaml' \
+  'perl'
 
 #
 # Autosuggestions
