@@ -18,11 +18,8 @@ fi
 
 COMPLETION_WAITING_DOTS="true"
 
-alias e='open -a /Applications/Emacs.app'
-alias ec=emacsclient
 alias db='danbooru-tool'
 alias hs='python3 -m http.server'
-alias mplayer='mpv'
 if (( $+commands[vim] )); then
     alias vi='vim'
 fi
