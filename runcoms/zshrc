@@ -53,3 +53,9 @@ if (( $+commands[direnv] )); then
 else
     echo "direnv not installed... ignoring."
 fi
+
+setopt -o NULL_GLOB
+for file in ~/.nix-profile/share/bash-completion/completions/*; do
+    source "$file"
+done
+setopt +o NULL_GLOB
