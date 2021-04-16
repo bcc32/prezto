@@ -58,8 +58,8 @@ setopt -o NULL_GLOB
 for profile in ''${(z)NIX_PROFILES}; do
     fpath+=($profile/share/zsh/site-functions $profile/share/zsh/$ZSH_VERSION/functions $profile/share/zsh/vendor-completions)
     infopath+=($profile/share/info)
-done
-for file in ~/.nix-profile/share/bash-completion/completions/*; do
-    source "$file"
+    for file in $profile/share/bash-completion/completions/*; do
+      source "$file"
+    done
 done
 setopt +o NULL_GLOB
