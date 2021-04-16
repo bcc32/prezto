@@ -54,12 +54,10 @@ else
     echo "direnv not installed... ignoring."
 fi
 
-setopt -o NULL_GLOB
 for profile in ''${(z)NIX_PROFILES}; do
     fpath+=($profile/share/zsh/site-functions $profile/share/zsh/$ZSH_VERSION/functions $profile/share/zsh/vendor-completions)
     infopath+=($profile/share/info)
-    for file in $profile/share/bash-completion/completions/*; do
-      source "$file"
-    done
+    if [ -f $profile/share/bash-completion/completions/watch-later.bash ]; then
+      source $profile/share/bash-completion/completions/watch-later.bash
+    fi
 done
-setopt +o NULL_GLOB
