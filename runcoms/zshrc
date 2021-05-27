@@ -1,5 +1,5 @@
 if [[ -z "$zprofile_sourced" ]]; then
-    source "${ZDOTDIR:-$HOME}/.zprofile"
+  source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
 #
@@ -21,7 +21,7 @@ COMPLETION_WAITING_DOTS="true"
 alias db='danbooru-tool'
 alias hs='python3 -m http.server'
 if (( $+commands[vim] )); then
-    alias vi='vim'
+  alias vi='vim'
 fi
 alias wl='watch-later'
 
@@ -49,20 +49,20 @@ alias ls="${aliases[ls]:-ls} -F"
 setopt interactivecomments
 
 if (( $+commands[direnv] )); then
-    eval "$(direnv hook zsh)"
+  eval "$(direnv hook zsh)"
 else
-    echo "direnv not installed... ignoring."
+  echo "direnv not installed... ignoring."
 fi
 
 for profile in ''${(z)NIX_PROFILES}; do
-    fpath=(
-        $profile/share/zsh/site-functions
-        $profile/share/zsh/$ZSH_VERSION/functions
-        $profile/share/zsh/vendor-completions
-        $fpath
-    )
-    infopath+=($profile/share/info)
-    if [ -f $profile/share/bash-completion/completions/watch-later.bash ]; then
-        source $profile/share/bash-completion/completions/watch-later.bash
-    fi
+  fpath=(
+    $profile/share/zsh/site-functions
+    $profile/share/zsh/$ZSH_VERSION/functions
+    $profile/share/zsh/vendor-completions
+    $fpath
+  )
+  infopath+=($profile/share/info)
+  if [ -f $profile/share/bash-completion/completions/watch-later.bash ]; then
+    source $profile/share/bash-completion/completions/watch-later.bash
+  fi
 done

@@ -73,8 +73,8 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 fpath=(
-    ~/.zfunc
-    $fpath
+  ~/.zfunc
+  $fpath
 )
 
 # Disable Homebrew phoning home
@@ -95,12 +95,12 @@ export FZF_DEFAULT_OPTS='
 export RSYNC_PROTECT_ARGS=1
 
 if (( $+commands[patdiff-git-wrapper] )); then
-    export GIT_EXTERNAL_DIFF=patdiff-git-wrapper
+  export GIT_EXTERNAL_DIFF=patdiff-git-wrapper
 fi
 
 path=(
-    ~/bin
-    $path
+  ~/bin
+  $path
 )
 
 zprofile_sourced=1
