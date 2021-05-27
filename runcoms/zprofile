@@ -104,3 +104,14 @@ path=(
 )
 
 zprofile_sourced=1
+
+# Redundant with .zshenv as a workaround for:
+# - https://github.com/NixOS/nix/issues/4169
+# - https://github.com/LnL7/nix-darwin/issues/122
+if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then
+  . ~/.nix-profile/etc/profile.d/nix.sh
+fi
+
+if [ -e ~/.nix-profile/etc/profile.d/hm-session-vars.sh ]; then
+  . ~/.nix-profile/etc/profile.d/hm-session-vars.sh
+fi
