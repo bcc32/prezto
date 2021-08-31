@@ -61,7 +61,7 @@ for profile in ''${(z)NIX_PROFILES}; do
     $fpath
   )
   infopath+=($profile/share/info)
-  if [ -f $profile/share/bash-completion/completions/watch-later.bash ]; then
-    source $profile/share/bash-completion/completions/watch-later.bash
+  if [ -f $profile/share/bash-completion/completions/wl.bash ]; then
+    source $profile/share/bash-completion/completions/wl.bash
   fi
 done
