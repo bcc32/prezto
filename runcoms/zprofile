@@ -21,8 +21,8 @@ fi
 # Editors
 #
 
-export EDITOR='emacsclient -a=vim'
-export VISUAL='emacsclient -a=vim'
+export EDITOR='emacsclient-alt-vim'
+export VISUAL='emacsclient-alt-vim'
 export PAGER='less'
 
 #
