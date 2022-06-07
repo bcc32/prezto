@@ -24,6 +24,8 @@ if (( $+commands[vim] )); then
   alias vi='vim'
 fi
 
+alias mkdir='mkdir -v'
+
 # tmux aliases
 
 alias ta='tmux attach -t'
