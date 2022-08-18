@@ -25,7 +25,7 @@ if (( $+commands[vim] )); then
   alias vi='vim'
 fi
 
-alias mkdir='mkdir -v'
+alias mkdir="${aliases[mkdir]:-mkdir} -v"
 
 # tmux aliases
 
