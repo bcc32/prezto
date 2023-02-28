@@ -19,6 +19,7 @@ fi
 COMPLETION_WAITING_DOTS="true"
 PURE_GIT_PULL=0
 
+alias CAPS='xdotool key Caps_Lock'
 alias db='danbooru-tool'
 alias hs='python3 -m http.server'
 if (( $+commands[vim] )); then
