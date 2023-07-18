@@ -26,6 +26,9 @@ if (( $+commands[vim] )); then
   alias vi='vim'
 fi
 
+alias ec='emacsclient -ca='
+alias et='emacsclient -t'
+
 alias mkdir="${aliases[mkdir]:-mkdir} -v"
 
 # tmux aliases
