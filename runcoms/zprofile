@@ -22,10 +22,10 @@ fi
 #
 
 if [[ -z "$EDITOR" ]]; then
-  export EDITOR='emacsclient-alt-vim'
+  export EDITOR=',emacsclient-alt-vim'
 fi
 if [[ -z "$VISUAL" ]]; then
-  export VISUAL='emacsclient-alt-vim'
+  export VISUAL=',emacsclient-alt-vim'
 fi
 if [[ -z "$PAGER" ]]; then
   export PAGER='less'
