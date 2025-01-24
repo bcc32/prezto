@@ -32,6 +32,8 @@ alias et='emacsclient -t'
 
 alias mkdir="${aliases[mkdir]:-mkdir} -v"
 
+alias dfl='duf -only local'
+
 # tmux aliases
 
 alias ta='tmux attach -t'
