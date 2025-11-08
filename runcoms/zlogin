@@ -26,9 +26,6 @@ if [[ -o INTERACTIVE && -t 2 ]]; then
     print
   fi
 
-  if (( $+commands[screen] )); then
-    screen -ls
-  fi
   if (( $+commands[tmux] )); then
     tmux ls
   fi
