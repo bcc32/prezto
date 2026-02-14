@@ -33,6 +33,7 @@ alias et='emacsclient -t'
 alias mkdir="${aliases[mkdir]:-mkdir} -v"
 
 alias dfl='duf -only local'
+alias lsb='lsblk --paths --output name,model,serial,size,fstype,label'
 
 # tmux aliases
 
