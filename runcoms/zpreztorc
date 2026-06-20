@@ -48,7 +48,8 @@ zstyle ':prezto:load' pmodule \
   'ssh' \
   'ocaml' \
   'perl' \
-  'ruby'
+  'ruby' \
+  'homebrew'
 
 #
 # Autosuggestions
